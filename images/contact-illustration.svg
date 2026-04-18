@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="480" viewBox="0 0 600 480">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1628"/><stop offset="100%" stop-color="#0d1e3d"/>
+    </linearGradient>
+    <linearGradient id="bl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E6FFF"/><stop offset="100%" stop-color="#00D4FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="480" fill="url(#bg)"/>
+  <g opacity="0.07" stroke="#1E6FFF" stroke-width="1">
+    <line x1="0" y1="60" x2="600" y2="60"/><line x1="0" y1="120" x2="600" y2="120"/>
+    <line x1="0" y1="180" x2="600" y2="180"/><line x1="0" y1="240" x2="600" y2="240"/>
+    <line x1="0" y1="300" x2="600" y2="300"/><line x1="0" y1="360" x2="600" y2="360"/>
+    <line x1="0" y1="420" x2="600" y2="420"/>
+    <line x1="60" y1="0" x2="60" y2="480"/><line x1="120" y1="0" x2="120" y2="480"/>
+    <line x1="180" y1="0" x2="180" y2="480"/><line x1="240" y1="0" x2="240" y2="480"/>
+    <line x1="300" y1="0" x2="300" y2="480"/><line x1="360" y1="0" x2="360" y2="480"/>
+    <line x1="420" y1="0" x2="420" y2="480"/><line x1="480" y1="0" x2="480" y2="480"/>
+    <line x1="540" y1="0" x2="540" y2="480"/>
+  </g>
+  <ellipse cx="300" cy="240" rx="200" ry="160" fill="#1E6FFF" opacity="0.08"/>
+  <!-- Phone mockup -->
+  <rect x="210" y="60" width="180" height="320" rx="24" fill="#0d1e3d" stroke="#1E6FFF" stroke-width="1.5"/>
+  <rect x="226" y="82" width="148" height="276" rx="12" fill="#081228"/>
+  <!-- Status bar -->
+  <rect x="226" y="82" width="148" height="20" rx="12" fill="#112040"/>
+  <rect x="226" y="94" width="148" height="8" fill="#112040"/>
+  <!-- Notch -->
+  <rect x="276" y="82" width="48" height="12" rx="6" fill="#0d1e3d"/>
+  <!-- Chat bubbles -->
+  <rect x="234" y="112" width="90" height="30" rx="10" fill="#1E6FFF"/>
+  <text x="279" y="132" font-family="Arial" font-size="9" fill="white" text-anchor="middle">Hey! Ready to start?</text>
+  <rect x="246" y="152" width="110" height="30" rx="10" fill="#112040" stroke="#1E6FFF" stroke-width="0.5"/>
+  <text x="301" y="172" font-family="Arial" font-size="9" fill="white" text-anchor="middle">Yes, let&#x27;s schedule!</text>
+  <rect x="234" y="192" width="80" height="30" rx="10" fill="#1E6FFF"/>
+  <text x="274" y="212" font-family="Arial" font-size="9" fill="white" text-anchor="middle">Book a call ✓</text>
+  <!-- Calendar card -->
+  <rect x="234" y="232" width="130" height="70" rx="10" fill="#112040" stroke="#1E6FFF" stroke-width="0.7"/>
+  <rect x="234" y="232" width="130" height="18" rx="10" fill="#1E6FFF"/>
+  <rect x="234" y="244" width="130" height="6" fill="#1E6FFF"/>
+  <text x="299" y="244" font-family="Arial" font-size="8" font-weight="bold" fill="white" text-anchor="middle">April 2026</text>
+  <text x="248" y="264" font-family="Arial" font-size="8" fill="#5A6A8A">M  T  W  T  F</text>
+  <text x="248" y="277" font-family="Arial" font-size="8" fill="white">1  2  3  4  5</text>
+  <text x="248" y="290" font-family="Arial" font-size="8" fill="white">8  9 10 11</text>
+  <circle cx="332" cy="286" r="8" fill="#1E6FFF"/>
+  <text x="332" y="290" font-family="Arial" font-size="8" font-weight="bold" fill="white" text-anchor="middle">12</text>
+  <!-- Input bar -->
+  <rect x="234" y="316" width="130" height="26" rx="13" fill="#112040" stroke="#1E6FFF" stroke-width="0.5"/>
+  <text x="260" y="333" font-family="Arial" font-size="9" fill="#5A6A8A">Type a message...</text>
+  <circle cx="352" cy="329" r="9" fill="#1E6FFF"/>
+  <polygon points="347,329 356,325 356,333" fill="white"/>
+  <!-- Home indicator -->
+  <rect x="270" y="348" width="60" height="4" rx="2" fill="#1E6FFF" opacity="0.4"/>
+  <!-- Floating badges -->
+  <rect x="30" y="130" width="150" height="55" rx="14" fill="white"/>
+  <circle cx="55" cy="157" r="16" fill="#1E6FFF"/>
+  <text x="55" y="162" font-family="Arial" font-size="11" font-weight="bold" fill="white" text-anchor="middle">📧</text>
+  <rect x="78" y="145" width="80" height="7" rx="3.5" fill="#1A2540"/>
+  <rect x="78" y="158" width="55" height="5" rx="2.5" fill="#5A6A8A"/>
+  <circle cx="162" cy="143" r="6" fill="#27C840"/>
+  <rect x="420" y="200" width="150" height="55" rx="14" fill="white"/>
+  <circle cx="445" cy="227" r="16" fill="#00D4FF"/>
+  <text x="445" y="232" font-family="Arial" font-size="11" font-weight="bold" fill="white" text-anchor="middle">📞</text>
+  <rect x="468" y="215" width="80" height="7" rx="3.5" fill="#1A2540"/>
+  <rect x="468" y="228" width="60" height="5" rx="2.5" fill="#5A6A8A"/>
+  <rect x="30" y="310" width="150" height="55" rx="14" fill="white"/>
+  <circle cx="55" cy="337" r="16" fill="#1E6FFF" opacity="0.8"/>
+  <text x="55" y="342" font-family="Arial" font-size="11" font-weight="bold" fill="white" text-anchor="middle">⏱</text>
+  <rect x="78" y="325" width="80" height="7" rx="3.5" fill="#1A2540"/>
+  <rect x="78" y="338" width="95" height="5" rx="2.5" fill="#5A6A8A"/>
+  <!-- Response badge -->
+  <rect x="160" y="410" width="280" height="44" rx="22" fill="#1E6FFF"/>
+  <text x="300" y="437" font-family="Arial" font-size="13" font-weight="bold" fill="white" text-anchor="middle">Respond within 24 hours ✓</text>
+</svg>

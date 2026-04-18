@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Contact Stellar Business Systems — book a free Salesforce consultation for your startup.">
   <title>Contact Us — Stellar Business Systems</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231E6FFF'/><text y='0.9em' font-size='60' x='18' fill='white' font-weight='bold'>S</text></svg>">
@@ -73,45 +74,70 @@
         <!-- Form Side -->
         <div class="contact-form-side">
           <h3>Send Us a Message</h3>
-          <p class="form-sub">Fill out the form and we'll get back to you with a tailored proposal.</p>
+          <p class="form-sub">Fill out the form and we'll get back to you within one business day.</p>
+
+          <!-- SUCCESS STATE -->
+          <div id="formSuccess" style="display:none;text-align:center;padding:40px 20px;">
+            <div style="width:64px;height:64px;background:rgba(22,163,74,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+              <i class="fas fa-check" style="color:#16A34A;font-size:1.5rem;"></i>
+            </div>
+            <h4 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.2rem;color:var(--navy);margin-bottom:8px;">Message Sent!</h4>
+            <p style="color:var(--text-muted);font-size:0.93rem;">We'll get back to you within one business day.</p>
+          </div>
+
+          <!-- FORM -->
           <form id="contactForm" novalidate>
             <div class="form-row">
               <div class="form-group">
                 <label for="firstName">First Name *</label>
-                <input type="text" id="firstName" name="firstName" placeholder="Rahul" required>
+                <input type="text" id="firstName" name="firstName" placeholder="Rahul" required autocomplete="given-name">
               </div>
               <div class="form-group">
                 <label for="lastName">Last Name *</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Kapoor" required>
+                <input type="text" id="lastName" name="lastName" placeholder="Kapoor" required autocomplete="family-name">
               </div>
             </div>
             <div class="form-group">
               <label for="email">Work Email *</label>
-              <input type="email" id="email" name="email" placeholder="rahul@yourcompany.com" required>
+              <input type="email" id="email" name="email" placeholder="rahul@yourcompany.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel">
             </div>
             <div class="form-group">
               <label for="company">Company / Startup Name</label>
-              <input type="text" id="company" name="company" placeholder="Nexaflow Technologies">
+              <input type="text" id="company" name="company" placeholder="Nexaflow Technologies" autocomplete="organization">
             </div>
             <div class="form-group">
               <label for="service">Service You're Interested In</label>
               <select id="service" name="service">
                 <option value="">Select a service...</option>
                 <option value="development">Salesforce Development</option>
-                <option value="configuration">Configuration & Setup</option>
+                <option value="configuration">Configuration &amp; Setup</option>
                 <option value="automation">Automation</option>
                 <option value="integration">Integration</option>
                 <option value="customization">UI Customization</option>
-                <option value="training">Training & Support</option>
+                <option value="training">Training &amp; Support</option>
                 <option value="other">Not sure — let's chat</option>
               </select>
             </div>
             <div class="form-group">
               <label for="message">Tell Us About Your Project *</label>
-              <textarea id="message" name="message" rows="5" placeholder="Describe what you're trying to achieve with Salesforce, your current setup, and any deadlines or budget range..." required></textarea>
+              <textarea id="message" name="message" rows="4" placeholder="What are you trying to achieve with Salesforce? Current setup, timeline, budget range..." required></textarea>
             </div>
-            <button type="submit" class="btn-primary btn-large" style="width:100%;">Send Message</button>
-            <p class="form-note">We'll get back to you within one business day. Your information is never shared.</p>
+            <!-- Inline error message -->
+            <div id="formError" style="display:none;background:#FEF2F2;border:1px solid #FECACA;border-radius:8px;padding:12px 14px;margin-bottom:14px;color:#DC2626;font-size:0.88rem;">
+              <i class="fas fa-exclamation-circle" style="margin-right:6px;"></i>
+              <span id="formErrorMsg">Please fill in all required fields.</span>
+            </div>
+            <button type="submit" id="submitBtn" class="btn-primary btn-large" style="width:100%;position:relative;">
+              <span id="btnText">Send Message</span>
+              <span id="btnSpinner" style="display:none;">
+                <i class="fas fa-spinner fa-spin" style="margin-right:8px;"></i>Sending...
+              </span>
+            </button>
+            <p class="form-note"><i class="fas fa-lock" style="margin-right:4px;font-size:0.75rem;"></i>Your information is never shared with third parties.</p>
           </form>
         </div>
       </div>
@@ -127,19 +153,19 @@
       </div>
       <div style="max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:16px;">
         <div style="background:var(--white);border-radius:var(--radius-md);padding:24px 28px;border:1px solid var(--border);">
-          <h4 style="font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px;">How quickly can you start?</h4>
+          <h4 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px;">How quickly can you start?</h4>
           <p style="font-size:0.93rem;color:var(--text-muted);">Typically within 1–2 weeks of agreement. We keep a small ready queue so urgent projects can start sooner.</p>
         </div>
         <div style="background:var(--white);border-radius:var(--radius-md);padding:24px 28px;border:1px solid var(--border);">
-          <h4 style="font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Do you work with startups that don't have Salesforce yet?</h4>
+          <h4 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Do you work with startups that don't have Salesforce yet?</h4>
           <p style="font-size:0.93rem;color:var(--text-muted);">Yes — we handle everything from licence procurement advice to full greenfield implementation. Many clients come to us before they've bought a single Salesforce seat.</p>
         </div>
         <div style="background:var(--white);border-radius:var(--radius-md);padding:24px 28px;border:1px solid var(--border);">
-          <h4 style="font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px;">How do you price projects?</h4>
+          <h4 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px;">How do you price projects?</h4>
           <p style="font-size:0.93rem;color:var(--text-muted);">Fixed-price for defined-scope projects, retainer for ongoing support. We provide a detailed statement of work before any payment.</p>
         </div>
         <div style="background:var(--white);border-radius:var(--radius-md);padding:24px 28px;border:1px solid var(--border);">
-          <h4 style="font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Do you offer post-launch support?</h4>
+          <h4 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px;">Do you offer post-launch support?</h4>
           <p style="font-size:0.93rem;color:var(--text-muted);">Every project includes 30 days of free post-launch support. After that, monthly retainers are available for ongoing maintenance, changes, and training.</p>
         </div>
       </div>

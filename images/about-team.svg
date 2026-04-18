@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="640" viewBox="0 0 800 640">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1628"/><stop offset="100%" stop-color="#0d1e3d"/>
+    </linearGradient>
+    <linearGradient id="bl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E6FFF"/><stop offset="100%" stop-color="#00D4FF"/>
+    </linearGradient>
+    <linearGradient id="av1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E6FFF"/><stop offset="100%" stop-color="#4D8FFF"/>
+    </linearGradient>
+    <linearGradient id="av2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D4FF"/><stop offset="100%" stop-color="#1E6FFF"/>
+    </linearGradient>
+    <linearGradient id="av3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4D8FFF"/><stop offset="100%" stop-color="#00D4FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="640" fill="url(#bg)"/>
+  <!-- Grid -->
+  <g opacity="0.06" stroke="#1E6FFF" stroke-width="1">
+    <line x1="0" y1="80" x2="800" y2="80"/><line x1="0" y1="160" x2="800" y2="160"/>
+    <line x1="0" y1="240" x2="800" y2="240"/><line x1="0" y1="320" x2="800" y2="320"/>
+    <line x1="0" y1="400" x2="800" y2="400"/><line x1="0" y1="480" x2="800" y2="480"/>
+    <line x1="0" y1="560" x2="800" y2="560"/>
+    <line x1="80" y1="0" x2="80" y2="640"/><line x1="160" y1="0" x2="160" y2="640"/>
+    <line x1="240" y1="0" x2="240" y2="640"/><line x1="320" y1="0" x2="320" y2="640"/>
+    <line x1="400" y1="0" x2="400" y2="640"/><line x1="480" y1="0" x2="480" y2="640"/>
+    <line x1="560" y1="0" x2="560" y2="640"/><line x1="640" y1="0" x2="640" y2="640"/>
+    <line x1="720" y1="0" x2="720" y2="640"/>
+  </g>
+  <!-- Glow orbs -->
+  <ellipse cx="400" cy="250" rx="280" ry="200" fill="#1E6FFF" opacity="0.08"/>
+  <!-- Connection lines between people -->
+  <line x1="200" y1="220" x2="400" y2="220" stroke="url(#bl)" stroke-width="1.5" opacity="0.4" stroke-dasharray="6 4"/>
+  <line x1="400" y1="220" x2="600" y2="220" stroke="url(#bl)" stroke-width="1.5" opacity="0.4" stroke-dasharray="6 4"/>
+  <line x1="200" y1="220" x2="310" y2="380" stroke="url(#bl)" stroke-width="1.5" opacity="0.3" stroke-dasharray="6 4"/>
+  <line x1="600" y1="220" x2="490" y2="380" stroke="url(#bl)" stroke-width="1.5" opacity="0.3" stroke-dasharray="6 4"/>
+  <line x1="400" y1="220" x2="400" y2="380" stroke="url(#bl)" stroke-width="1.5" opacity="0.3" stroke-dasharray="6 4"/>
+  <!-- Person 1 (left) -->
+  <circle cx="200" cy="175" r="55" fill="#0d1e3d" stroke="#1E6FFF" stroke-width="1.5"/>
+  <circle cx="200" cy="160" r="26" fill="url(#av1)"/>
+  <ellipse cx="200" cy="200" rx="38" ry="22" fill="url(#av1)" opacity="0.8"/>
+  <text x="200" y="167" font-family="Arial" font-size="22" font-weight="bold" fill="white" text-anchor="middle">AK</text>
+  <!-- Card under person 1 -->
+  <rect x="130" y="240" width="140" height="70" rx="12" fill="#112040" stroke="#1E6FFF" stroke-width="0.8"/>
+  <rect x="145" y="255" width="70" height="7" rx="3.5" fill="white" opacity="0.85"/>
+  <rect x="145" y="268" width="50" height="5" rx="2.5" fill="#5A6A8A"/>
+  <rect x="145" y="281" width="90" height="5" rx="2.5" fill="#1E6FFF" opacity="0.7"/>
+  <circle cx="243" cy="258" r="8" fill="#27C840" opacity="0.9"/>
+  <!-- Person 2 (centre) -->
+  <circle cx="400" cy="175" r="60" fill="#0d1e3d" stroke="url(#bl)" stroke-width="2.5"/>
+  <circle cx="400" cy="158" r="28" fill="url(#av2)"/>
+  <ellipse cx="400" cy="200" rx="42" ry="24" fill="url(#av2)" opacity="0.8"/>
+  <text x="400" y="166" font-family="Arial" font-size="24" font-weight="bold" fill="white" text-anchor="middle">RS</text>
+  <!-- Lead badge -->
+  <rect x="350" y="100" width="100" height="24" rx="12" fill="url(#bl)"/>
+  <text x="400" y="116" font-family="Arial" font-size="10" font-weight="bold" fill="white" text-anchor="middle">LEAD ARCHITECT</text>
+  <!-- Card under person 2 -->
+  <rect x="320" y="245" width="160" height="80" rx="12" fill="#112040" stroke="#1E6FFF" stroke-width="1.5"/>
+  <rect x="336" y="260" width="85" height="7" rx="3.5" fill="white" opacity="0.9"/>
+  <rect x="336" y="273" width="60" height="5" rx="2.5" fill="#5A6A8A"/>
+  <rect x="336" y="286" width="100" height="5" rx="2.5" fill="url(#bl)" opacity="0.9"/>
+  <rect x="336" y="299" width="75" height="5" rx="2.5" fill="#5A6A8A"/>
+  <circle cx="456" cy="263" r="9" fill="#1E6FFF"/>
+  <rect x="452" y="259" width="8" height="8" rx="1" fill="white" opacity="0.9"/>
+  <!-- Person 3 (right) -->
+  <circle cx="600" cy="175" r="55" fill="#0d1e3d" stroke="#1E6FFF" stroke-width="1.5"/>
+  <circle cx="600" cy="160" r="26" fill="url(#av3)"/>
+  <ellipse cx="600" cy="200" rx="38" ry="22" fill="url(#av3)" opacity="0.8"/>
+  <text x="600" y="167" font-family="Arial" font-size="22" font-weight="bold" fill="white" text-anchor="middle">PD</text>
+  <!-- Card under person 3 -->
+  <rect x="530" y="240" width="140" height="70" rx="12" fill="#112040" stroke="#1E6FFF" stroke-width="0.8"/>
+  <rect x="545" y="255" width="65" height="7" rx="3.5" fill="white" opacity="0.85"/>
+  <rect x="545" y="268" width="55" height="5" rx="2.5" fill="#5A6A8A"/>
+  <rect x="545" y="281" width="85" height="5" rx="2.5" fill="#1E6FFF" opacity="0.7"/>
+  <circle cx="643" cy="258" r="8" fill="#27C840" opacity="0.9"/>
+  <!-- Bottom row: stats -->
+  <rect x="60" y="390" width="680" height="130" rx="16" fill="#0d1e3d" stroke="#1E6FFF" stroke-width="0.8"/>
+  <!-- Stat boxes -->
+  <rect x="88" y="415" width="140" height="80" rx="10" fill="#112040"/>
+  <text x="158" y="450" font-family="Arial" font-size="30" font-weight="bold" fill="#1E6FFF" text-anchor="middle">50+</text>
+  <text x="158" y="468" font-family="Arial" font-size="11" fill="#5A6A8A" text-anchor="middle">Startup Clients</text>
+  <rect x="248" y="415" width="140" height="80" rx="10" fill="#112040"/>
+  <text x="318" y="450" font-family="Arial" font-size="30" font-weight="bold" fill="#00D4FF" text-anchor="middle">120+</text>
+  <text x="318" y="468" font-family="Arial" font-size="11" fill="#5A6A8A" text-anchor="middle">Implementations</text>
+  <rect x="408" y="415" width="140" height="80" rx="10" fill="#112040"/>
+  <text x="478" y="450" font-family="Arial" font-size="30" font-weight="bold" fill="#1E6FFF" text-anchor="middle">95%</text>
+  <text x="478" y="468" font-family="Arial" font-size="11" fill="#5A6A8A" text-anchor="middle">On-time Delivery</text>
+  <rect x="568" y="415" width="144" height="80" rx="10" fill="#112040"/>
+  <text x="640" y="450" font-family="Arial" font-size="30" font-weight="bold" fill="#00D4FF" text-anchor="middle">100%</text>
+  <text x="640" y="468" font-family="Arial" font-size="11" fill="#5A6A8A" text-anchor="middle">Certified Team</text>
+  <!-- Title text -->
+  <text x="400" y="570" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle" opacity="0.9">Salesforce-Certified Professionals</text>
+  <text x="400" y="594" font-family="Arial" font-size="12" fill="#5A6A8A" text-anchor="middle">Building scalable CRM solutions for startups since 2020</text>
+</svg>

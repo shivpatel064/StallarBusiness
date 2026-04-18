@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Stellar Business Systems — Certified Salesforce consulting for startups. Development, configuration, automation & integration. Fast delivery, strong ROI.">
+  <meta name="description" content="Stellar Business Systems — Certified Salesforce consulting for startups. Development, configuration, automation and integration. Fast delivery, strong ROI.">
   <meta property="og:title" content="Stellar Business Systems — Salesforce for Startups">
-  <meta property="og:description" content="Certified Salesforce consulting for startups. Fast delivery, strong ROI, and a scalable setup from day one.">
+  <meta property="og:description" content="Certified Salesforce consulting for startups. Fast delivery, strong ROI, scalable setup from day one.">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <title>Stellar Business Systems — Salesforce Solutions for Startups</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231E6FFF'/><text y='0.9em' font-size='60' x='18' fill='white' font-weight='bold'>S</text></svg>">
@@ -45,7 +48,7 @@
       </div>
       <div class="hero-visual">
         <div class="hero-img-wrap">
-          <img src="images/pexels-mikhail-nilov-7989134.jpg" alt="Salesforce team at work" loading="lazy">
+          <img src="images/hero-illustration.svg" alt="Salesforce CRM dashboard illustration" loading="eager">
         </div>
         <div class="hero-badge">
           <span class="badge-icon">🚀</span>
@@ -63,7 +66,7 @@
   </section>
 
   <!-- ====== METRICS ====== -->
-  <section style="padding:0;">
+  <section style="padding:0; background:var(--white); border-bottom:1px solid #EEF2FF;">
     <div class="metrics-inner">
       <div class="metric-item">
         <div class="metric-num" data-count="50" data-suffix="+">50+</div>
@@ -130,11 +133,15 @@
         <h2 class="section-title">From Discovery to Go-Live in Weeks</h2>
         <p class="section-sub">Our sprint-based delivery model keeps you in control and on budget — with zero surprise delays.</p>
       </div>
+      <!-- Process illustration -->
+      <div style="border-radius:var(--radius-lg);overflow:hidden;margin-bottom:3rem;border:1px solid var(--border);">
+        <img src="images/process-illustration.svg" alt="4-step delivery process" style="width:100%;display:block;" loading="lazy">
+      </div>
       <div class="process-grid">
         <div class="process-step">
           <div class="step-num">01</div>
           <h4>Discovery Call</h4>
-          <p>We learn your workflows, goals, and current pain points in a focused 30-min session.</p>
+          <p>We learn your workflows, goals, and pain points in a focused 30-min session.</p>
         </div>
         <div class="process-step">
           <div class="step-num">02</div>
@@ -148,8 +155,8 @@
         </div>
         <div class="process-step">
           <div class="step-num">04</div>
-          <h4>Training & Handoff</h4>
-          <p>We train your team, document everything, and stay available for 30-day post-launch support.</p>
+          <h4>Training &amp; Handoff</h4>
+          <p>We train your team, document everything, and support you for 30 days post-launch.</p>
         </div>
       </div>
     </div>
@@ -160,7 +167,7 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-img-wrap">
-          <img src="images/pexels-kampus-8204311.jpg" alt="Our certified Salesforce team" loading="lazy">
+          <img src="images/about-team.svg" alt="Our certified Salesforce team" loading="lazy">
           <div class="about-cert-badge">
             <div class="cert-icon">🏅</div>
             <div class="cert-text">Salesforce Certified</div>
@@ -189,7 +196,7 @@
               <i class="fas fa-shield-alt ap-icon"></i>
               <div>
                 <div class="ap-title">Fixed-Price Transparency</div>
-                <div class="ap-desc">Clear scoping, no scope creep surprises, and milestone-based billing for peace of mind.</div>
+                <div class="ap-desc">Clear scoping, no scope creep, and milestone-based billing for peace of mind.</div>
               </div>
             </div>
           </div>
@@ -249,15 +256,17 @@
   </section>
 
   <!-- ====== CTA BAND ====== -->
-  <section style="background: var(--navy); padding: 72px 0;">
-    <div class="container" style="text-align:center;">
-      <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:white;margin-bottom:1rem;">Ready to Scale with Salesforce?</h2>
+  <section style="background:var(--navy);padding:72px 0;position:relative;overflow:hidden;">
+    <div style="position:absolute;right:0;top:0;bottom:0;width:320px;opacity:0.4;pointer-events:none;">
+      <img src="images/cta-illustration.svg" alt="" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+    <div class="container" style="text-align:center;position:relative;z-index:2;">
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(1.5rem,3vw,2.1rem);font-weight:700;color:white;margin-bottom:1rem;letter-spacing:-0.02em;">Ready to Scale with Salesforce?</h2>
       <p style="font-size:1.05rem;color:rgba(255,255,255,0.6);margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto;">Book a free 30-minute consultation and we'll map out your Salesforce roadmap — no commitment, no jargon.</p>
       <a href="contact.html" class="btn-primary btn-large">Book a Free Call</a>
     </div>
   </section>
 
-  <!-- Toast -->
   <div class="toast" id="toast">
     <i class="fas fa-check-circle"></i>
     <span id="toastMessage">Message sent successfully!</span>
